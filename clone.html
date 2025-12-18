@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Clone</title>
+    <link rel="stylesheet" href="./clone.css">
+</head>
+<body>
+
+<div id="login">
+    <div class="popup-box">
+        <span class="close-popup">&times;</span>
+        <h2>Login</h2>
+        <p>Mobile Number</p>
+        <input type="tel" placeholder="Enter number">
+        <button>Continue</button>
+    </div>
+</div>
+
+<div class="top-blue">Free Delivery | 100% Original</div>
+
+<header class="navbar">
+    <div class="logo"><a href="#home">Flipkart</a></div>
+    <div class="search-area">
+        <input type="text" placeholder="Search for products, brands and more">
+        <button class="search-orange">Search</button>
+    </div>
+    <nav class="nav-right">
+        <a href="#login" class="login-link">Login</a>
+        <a href="#cart" class="cart-link">Cart</a>
+    </nav>
+</header>
+
+<nav class="categories" id="home">
+    <a href="#row1">Electronics</a>
+    <a href="#row2">Fashion</a>
+    <a href="#row3">Home</a>
+</nav>
+
+<section class="hero-banner">
+    <img src="./ti.jpg" alt="Sale Banner">
+</section>
+
+<main class="products-main">
+    <h2>Products</h2>
+
+    <!-- Row 1 -->
+    <div class="product-row" id="row1">
+        <div class="product-box">
+            <img src="./i.jpg" alt="iPhone">
+            <h3>iPhone</h3>
+            <p class="price-row">₹50,000</p>
+            <a href="#order-success" class="cart-button">Place Order</a>
+        </div>
+        <div class="product-box">
+            <img src="./t.jpeg" alt="Smart TV">
+            <h3>Smart TV</h3>
+            <p class="price-row">₹30,000</p>
+            <a href="#order-success" class="cart-button">Place Order</a>
+        </div>
+        <div class="product-box">
+            <img src="./l.jpg" alt="Laptop">
+            <h3>Laptop</h3>
+            <p class="price-row">₹60,000</p>
+            <a href="#order-success" class="cart-button">Place Order</a>
+        </div>
+        <div class="product-box">
+            <img src="./w.jpg" alt="Watch">
+            <h3>Watch</h3>
+            <p class="price-row">₹20,000</p>
+            <a href="#order-success" class="cart-button">Place Order</a>
+        </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="product-row" id="row2">
+        <div class="product-box">
+            <img src="./h.jpg" alt="Headphones">
+            <h3>Headphones</h3>
+            <p class="price-row">₹2,000</p>
+            <a href="#order-success" class="cart-button">Place Order</a>
+        </div>
+        <div class="product-box">
+            <img src="./camera.jpg" alt="Camera">
+            <h3>Camera</h3>
+            <p class="price-row">₹25,000</p>
+            <a href="#order-success" class="cart-button">Place Order</a>
+        </div>
+        <div class="product-box">
+            <img src="./nike.jpg" alt="Nike Shoes">
+            <h3>Shoes</h3>
+            <p class="price-row">₹3,000</p>
+            <a href="#order-success" class="cart-button">Place Order</a>
+        </div>
+        <div class="product-box">
+            <img src="./bag.jpg" alt="Bag">
+            <h3>Bag</h3>
+            <p class="price-row">₹1,500</p>
+            <a href="#order-success" class="cart-button">Place Order</a>
+        </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="product-row" id="row3">
+        <div class="product-box">
+            <img src="./ipad.jpg" alt="Tablet">
+            <h3>Tablet</h3>
+            <p class="price-row">₹15,000</p>
+            <a href="#order-success" class="cart-button">Place Order</a>
+        </div>
+        <div class="product-box">
+            <img src="./speaker.jpg" alt="Speaker">
+            <h3>Speaker</h3>
+            <p class="price-row">₹4,000</p>
+            <a href="#order-success" class="cart-button">Place Order</a>
+        </div>
+        <div class="product-box">
+            <img src="./refrigerator.jpg" alt="Fridge">
+            <h3>Fridge</h3>
+            <p class="price-row">₹35,000</p>
+            <a href="#order-success" class="cart-button">Place Order</a>
+        </div>
+        <div class="product-box">
+            <img src="./ac.jpg" alt="AC">
+            <h3>AC</h3>
+            <p class="price-row">₹40,000</p>
+            <a href="#order-success" class="cart-button">Place Order</a>
+        </div>
+    </div>
+</main>
+
+<section class="cart-area" id="cart">
+    <h2>Cart</h2>
+    <p class="empty-text">Empty cart</p>
+    <a href="#home" class="shop-now">Shop Now</a>
+</section>
+
+<section id="order-success" class="order-success">
+    <img src="https://abesquiz.netlify.app/assets/image/tick.gif"
+         alt="Order Success" class="tick-icon">
+    <h2>Order Placed Successfully!</h2>
+    <p>Thank you for shopping with us.</p>
+    <a href="#home" class="shop-now">Continue Shopping</a>
+</section>
+
+<footer class="dark-footer">
+    <p>This Flipkart Clone project is created using only HTML and CSS to demonstrate the basic structure and design of an online shopping website. It includes a functional navigation bar, product sections with images and prices, a simple cart area, and a login popup layout that together give a clear idea of how an e‑commerce homepage works for a B.Tech level web development project.</p>
+</footer>
+
+</body>
+</html>

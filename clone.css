@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+}
+
+#login {
+    position: fixed;
+    inset: 0;
+    background-color: black;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.popup-box {
+    background-color: white;
+    width: 320px;
+    padding: 20px 16px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.close-popup {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+}
+
+.popup-box h2 {
+    margin-bottom: 10px;
+    color: black;
+}
+
+.popup-box p {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: black;
+}
+
+.popup-box input {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    outline: none;
+    background-color: white;
+    color: black;
+}
+
+.popup-box button {
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.top-blue {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 13px;
+}
+
+.navbar {
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 16px;
+}
+
+.logo a {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.search-area {
+    flex: 1;
+    display: flex;
+}
+
+.search-area input {
+    flex: 1;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+}
+
+.search-orange {
+    background-color: yellow;
+    border: none;
+    padding: 0 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+}
+
+.nav-right a {
+    color: white;
+    margin-left: 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.categories {
+    background-color: white;
+    padding: 12px 24px;
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+}
+
+.categories a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero-banner img {
+    width: 100%;
+    display: block;
+}
+
+.products-main {
+    background-color: whitesmoke;
+    margin: 16px 8px;
+    padding: 16px 12px;
+}
+
+.products-main h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: black;
+}
+
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.product-box {
+    background-color: white;
+    border: 1px solid lightgray;
+    width: 23%;
+    text-align: center;
+    padding: 10px 6px;
+}
+
+.product-box img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 8px;
+    background-color: white;
+}
+
+.product-box h3 {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 4px;
+}
+
+.price-row {
+    color: green;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.cart-button {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: orange;
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 2px;
+}
+
+.cart-area {
+    background-color: white;
+    margin: 16px 8px;
+    padding: 16px 12px;
+    text-align: center;
+}
+
+.cart-area h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: black;
+}
+
+.empty-text {
+    color: gray;
+    margin: 8px 0;
+}
+
+.shop-now {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.order-success {
+    background-color: white;
+    margin: 40px 8px;
+    padding: 20px 12px;
+    text-align: center;
+    border: 1px solid lightgray;
+}
+
+.tick-icon {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.dark-footer {
+    margin-top: 20px;
+    padding: 16px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}

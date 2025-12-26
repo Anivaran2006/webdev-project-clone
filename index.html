@@ -1,152 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flipkart Clone</title>
-    <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8">
+  <title>Flipkart Clone</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-<div id="login">
-    <div class="popup-box">
-        <span class="close-popup">&times;</span>
-        <h2>Login</h2>
-        <p>Mobile Number</p>
-        <input type="tel" placeholder="Enter number">
-        <button>Continue</button>
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="images/flipkart-plus_8d85f4.png" alt="Flipkart logo" class="logo">
+      <div class="search-box">
+        <input type="text" placeholder="Search for Products, Brands and More">
+        <button>Search</button>
+      </div>
     </div>
-</div>
 
-<div class="top-blue">Free Delivery | 100% Original</div>
+    <div class="nav-right">
+      <a href="#">Login</a>
+      <a href="#">Become a Seller</a>
+       <a href="#">Cart</a>
+      <div class="more-wrapper">
+        <button class="more-btn" aria-label="More options">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="more-text"></span>
+        </button>
 
-<header class="navbar">
-    <div class="logo"><a href="#home">Flipkart</a></div>
-    <div class="search-area">
-        <input type="text" placeholder="Search for products, brands and more">
-        <button class="search-orange">Search</button>
+        <ul class="more-menu">
+          <li><a href="#">Notification Preferences</a></li>
+          <li><a href="#">24x7 Customer Care</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li><a href="#">Download App</a></li>
+        </ul>
+      </div>
+
+     
     </div>
-    <nav class="nav-right">
-        <a href="#login" class="login-link" role="button">Login</a>
-        <a href="#cart" class="cart-link">Cart</a>
-    </nav>
-</header>
+  </header>
 
-<nav class="categories" id="home">
-    <a href="#row1">Electronics</a>
-    <a href="#row2">Fashion</a>
-    <a href="#row3">Home</a>
-</nav>
-<section class="hero-banner">
-    <div class="banner-slider">
-        <img src="./images/ti.jpg" alt="Main Sale Banner 1">
-        <img src="./images/flip.jpg" alt="Main Sale Banner 2">
-        <img src="./images/flip2.jpg" alt="Main Sale Banner 3">
+  <nav class="category-strip">
+    <div class="cat-item">
+      <img src="images/minutes.jpg" alt="Minutes">
+      <span>Minutes</span>
+    </div>
+    <div class="cat-item">
+      <img src="images/mobiles-tablets.jpg" alt="Mobiles &amp; Tablets">
+      <span>Mobiles &amp; Tablets</span>
+    </div>
+    <div class="cat-item">
+      <img src="images/fashion.jpg" alt="Fashion">
+      <span>Fashion</span>
+    </div>
+    <div class="cat-item">
+      <img src="images/electronics.jpg" alt="Electronics">
+      <span>Electronics</span>
+    </div>
+    <div class="cat-item">
+      <img src="images/tvs-appliances.jpg" alt="TVs &amp; Appliances">
+      <span>TVs &amp; Appliances</span>
+    </div>
+    <div class="cat-item">
+      <img src="images/home-furniture.jpg" alt="Home &amp; Furniture">
+      <span>Home &amp; Furniture</span>
+    </div>
+    <div class="cat-item">
+      <img src="images/flight-bookings.jpg" alt="Flight Bookings">
+      <span>Flight Bookings</span>
+    </div>
+    <div class="cat-item">
+      <img src="images/beauty-food-toys.jpg" alt="Beauty, Food, Perfume">
+      <span>Beauty, Food..</span>
+    </div>
+    <div class="cat-item">
+      <img src="images/grocery.jpg" alt="Grocery">
+      <span>Grocery</span>
+    </div>
+  </nav>
+
+  <section class="banner">
+    <img src="images/samsung_logo.jpg" alt="Samsung main banner">
+  </section>
+
+  <section class="product-row">
+    <div class="row-header">
+      <h2>Top Deals on Home Essentials</h2>
+      <button class="view-all">VIEW ALL</button>
+    </div>
+
+    <div class="product-list">
+      <div class="product-card">
+        <img src="images/bottle.jpg" alt="Bottles and flasks">
+        <p class="name">Bottles and flasks</p>
+        <p class="offer">From ₹129</p>
+      </div>
+
+      <div class="product-card">
+        <img src="images/cookware-range.jpg" alt="Cookware range">
+        <p class="name">Cookware range</p>
+        <p class="offer">From ₹299</p>
+      </div>
+
+      <div class="product-card">
+        <img src="images/faucets.jpg" alt="Faucets">
+        <p class="name">Faucets</p>
+        <p class="offer">Up to 80% Off</p>
+      </div>
+
+      <div class="product-card">
+        <img src="images/casserole.jpg" alt="Casseroles">
+        <p class="name">Casseroles</p>
+        <p class="offer">From ₹299</p>
+      </div>
+
+      <div class="product-card">
+        <img src="images/indoor-plants.jpg" alt="Indoor Plants">
+        <p class="name">Indoor Plants</p>
+        <p class="offer">Up to 85% Off</p>
+      </div>
+
+      <div class="product-card">
+        <img src="images/home-emergency.jpg" alt="Home Emergency Light">
+        <p class="name">Home Emergency Li...</p>
+        <p class="offer">Min. 40% Off</p>
+      </div>
+
+      <div class="product-card">
+        <img src="images/garden-sprayers.jpg" alt="Garden Sprayers">
+        <p class="name">Garden Sprayers</p>
+        <p class="offer">Up to 75% Off</p>
+      </div>
+      <div class="product-card">
+          <img src="images/wrist-watch-fashion.jpg" alt="Wrist Watches">
+          <p class="name">Wrist Watches</p>
+          <p class="offer">Min. 90% Off</p>
         </div>
+    </div>
+  </section>
+
+  <section class="product-row">
+    <div class="row-header">
+      <h2>Top Deals On TVs &amp; Appliances</h2>
+      <button class="view-all">VIEW ALL</button>
+    </div>
+
+    <div class="product-list">
+      <div class="product-card">
+        <img src="images/shoe-rack-01.jpg" alt="Shoe Rack">
+        <p class="name">Shoe Rack</p>
+        <p class="offer">From ₹279</p>
+      </div>
+
+      <div class="product-card">
+        <img src="images/portable-laptop-table-01.jpg" alt="Portable laptop table">
+        <p class="name">Portable laptop table</p>
+        <p class="offer">From ₹399</p>
+      </div>
+
+      <div class="product-card">
+        <img src="images/home-temple" alt="Home Temple">
+        <p class="name">Home Temple</p>
+        <p class="offer">From ₹299</p>
+      </div>
+
+      <div class="product-card">
+        <img src="images/space-saving-furniture-01.jpg" alt="Space Saving Furniture">
+        <p class="name">Space Saving Furniture</p>
+        <p class="offer">From ₹599</p>
+      </div>
+
+      <div class="product-card">
+        <img src="images/recliner-01.jpg" alt="Recliner">
+        <p class="name">Recliner</p>
+        <p class="offer">From ₹9999</p>
+      </div>
+
+      <div class="product-card">
+        <img src="images/chairs-01.jpg" alt="Chairs">
+        <p class="name">Chairs</p>
+        <p class="offer">From ₹2990</p>
+      </div>
+      <div class="product-card">
+          <img src="images/baby_diaper.jpg" alt="Baby Diapers">
+          <p class="name">Baby Diapers</p>
+          <p class="offer">Min. 30% Off</p>
+        </div>
+
+        <div class="product-card">
+          <img src="images/trimmer-kit.jpg" alt="Trimmers">
+          <p class="name">Trimmers</p>
+          <p class="offer">Min. 50% Off</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="product-row">
+    <div class="row-header">
+      <h2>Top Deals</h2>
+      <button class="view-all">VIEW ALL</button>
+    </div>
+
+    <div class="product-list">
+      <div class="product-card">
+        <img src="images/projector-01.jpg" alt="Projector">
+        <p class="name">Projector</p>
+        <p class="offer">From ₹6990</p>
+      </div>
+      <div class="product-card">
+        <img src="images/bluetooth-speaker-01.jpg" alt="Best Selling Mobile Speaker">
+        <p class="name">Best Selling Mobile S...</p>
+        <p class="offer">From ₹2499*</p>
+      </div>
+      <div class="product-card">
+        <img src="images/monitor-01.jpg" alt="Monitors">
+        <p class="name">Monitors</p>
+        <p class="offer">From ₹6599</p>
+      </div>
+      <div class="product-card">
+        <img src="images/fastrack-smartwatch-01.jpg" alt="Fastrack Smartwatch">
+        <p class="name">Fastrack Smartwatch...</p>
+        <p class="offer">From ₹1399</p>
+      </div>
+      <div class="product-card">
+        <img src="images/printer-01.jpg" alt="Printers">
+        <p class="name">Printers</p>
+        <p class="offer">From ₹2336</p>
+      </div>
+      <div class="product-card">
+        <img src="images/monitor-02.jpg" alt="Monitors">
+        <p class="name">Monitors</p>
+        <p class="offer">From ₹7949</p>
+      </div>
+      <div class="product-card">
+          <img src="images/baby_diaper.jpg" alt="Baby Diapers">
+          <p class="name">Baby Diapers</p>
+          <p class="offer">Min. 30% Off</p>
+        </div>
+
+        <div class="product-card">
+          <img src="images/trimmer-kit.jpg" alt="Trimmers">
+          <p class="name">Trimmers</p>
+          <p class="offer">Min. 50% Off</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="product-row">
+    <div class="row-header">
+      <h2>Top deals on appliances</h2>
+      <button class="view-all">VIEW ALL</button>
+    </div>
+
+    <div class="product-list">
+      <div class="product-card">
+        <img src="images/kitchen-essentials-mixer.jpg" alt="Kitchen Essentials">
+        <p class="name">Kitchen Essentials</p>
+        <p class="offer">From ₹1249</p>
+      </div>
+      <div class="product-card">
+        <img src="images/home-essentials-purifier.jpg" alt="Home Essentials">
+        <p class="name">Home Essentials</p>
+        <p class="offer">Shop Now!</p>
+      </div>
+      <div class="product-card">
+        <img src="images/fan-geyser.jpg" alt="Fans &amp; Geysers">
+        <p class="name">Fans &amp; Geysers</p>
+        <p class="offer">From ₹799</p>
+      </div>
+      <div class="product-card">
+        <img src="images/heels-sandals.jpg" alt="Heels &amp; Sandals">
+        <p class="name">Heels &amp; Sandals</p>
+        <p class="offer">Under ₹499</p>
+      </div>
+      <div class="product-card">
+        <img src="images/sports-shoes.jpg" alt="Sports Shoes">
+        <p class="name">Sports Shoes</p>
+        <p class="offer">Min. 40% Off</p>
+      </div>
+      <div class="product-card">
+        <img src="images/womens-heels.jpg" alt="Women's Heels">
+        <p class="name">Women's Heels</p>
+        <p class="offer">Min. 40% Off</p>
+      </div>
+    <div class="product-card">
+          <img src="images/baby_diaper.jpg" alt="Baby Diapers">
+          <p class="name">Baby Diapers</p>
+          <p class="offer">Min. 30% Off</p>
+        </div>
+
+        <div class="product-card">
+          <img src="images/trimmer-kit.jpg" alt="Trimmers">
+          <p class="name">Trimmers</p>
+          <p class="offer">Min. 50% Off</p>
+        </div>
+      </div>
+  </section>
+
+  <section class="product-row">
+    <div class="row-header">
+      <h2>Top Deals</h2>
+      <button class="view-all">VIEW ALL</button>
+    </div>
+
+    <div class="product-list">
+      <div class="product-card">
+        <img src="images/apple-ipad.jpg" alt="Apple iPads">
+        <p class="name">Apple iPads</p>
+        <p class="offer">From ₹xxxx</p>
+      </div>
+      <div class="product-card">
+        <img src="images/guitar-instrument.jpg" alt="Instruments">
+        <p class="name">Instruments</p>
+        <p class="offer">From ₹xxxx</p>
+      </div>
+      <div class="product-card">
+        <img src="images/instax-camera.jpg" alt="Instax Cameras">
+        <p class="name">Instax Cameras</p>
+        <p class="offer">From ₹xxxx</p>
+      </div>
+      <div class="product-card">
+        <img src="images/perfume-bottle.jpg" alt="Perfume &amp; more">
+        <p class="name">Perfume &amp; more</p>
+        <p class="offer">From ₹xxxx</p>
+      </div>
+      <div class="product-card">
+        <img src="images/camera-bag.jpg" alt="Camera Bags">
+        <p class="name">Camera Bags</p>
+        <p class="offer">From ₹xxxx</p>
+      </div>
+      <div class="product-card">
+        <img src="images/health-supplement-pack.jpg" alt="Health Supplements">
+        <p class="name">Health Supplements</p>
+        <p class="offer">From ₹xxxx</p>
+      </div>
+      <div class="product-card">
+        <img src="images/beauty-supplement-pack.jpg" alt="Beauty Supplements">
+        <p class="name">Beauty Supplements</p>
+        <p class="offer">From ₹xxxx</p>
+      </div>
+      <div class="product-card">
+          <img src="images/baby_diaper.jpg" alt="Baby Diapers">
+          <p class="name">Baby Diapers</p>
+          <p class="offer">Min. 30% Off</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="product-row">
+    <div class="row-header">
+      <h2>Top Deals on Auto Accessories</h2>
+      <button class="view-all">VIEW ALL</button>
+    </div>
+
+    <div class="product-list">
+      <div class="product-card">
+        <img src="images/helmet.jpg" alt="Helmet">
+        <p class="name">Helmets</p>
+        <p class="offer">Min. 50% Off</p>
+      </div>
+      <div class="product-card">
+        <img src="images/bike-light-bulb.jpg" alt="Bike Light Bulb">
+        <p class="name">Headlights/FOG Lamps</p>
+        <p class="offer">Min. 50% Off</p>
+      </div>
+      <div class="product-card">
+        <img src="images/riding-gloves.jpg" alt="Riding Gloves">
+        <p class="name">Riding Gloves</p>
+        <p class="offer">Min. 50% Off</p>
+      </div>
+      <div class="product-card">
+        <img src="images/vehicle-washing-cloth.jpg" alt="Vehicle Washing Cloth">
+        <p class="name">Car/Bike Cleaning</p>
+        <p class="offer">Min. 50% Off</p>
+      </div>
+      <div class="product-card">
+        <img src="images/car-sticker-decal.jpg" alt="Car Sticker Decal">
+        <p class="name">Stickers &amp; Decals</p>
+        <p class="offer">Min. 50% Off</p>
+      </div>
+      <div class="product-card">
+        <img src="images/bike-body-cover.jpg" alt="Bike Body Cover">
+        <p class="name">Bike Covers</p>
+        <p class="offer">Min. 50% Off</p>
+      </div>
+      <div class="product-card">
+        <img src="images/car-air-freshener.jpg" alt="Car Air Freshener">
+        <p class="name">Air Fresheners</p>
+        <p class="offer">Min. 50% Off</p>
+      </div>
+      <div class="product-card">
+          <img src="images/baby_diaper.jpg" alt="Baby Diapers">
+          <p class="name">Baby Diapers</p>
+          <p class="offer">Min. 30% Off</p>
+        </div>
+    </div>
+  </section>
+  <section class="product-row">
+  <img src="images/Screenshot 2025-12-26 152543.png" alt="Flipkart section screenshot" class="full-row-image">
 </section>
 
-<main class="products-main">
-    <h2>Products</h2>
-
-    <div class="product-row" id="row1">
-        <div class="product-box">
-            <img src="./images/i.jpg" alt="Apple iPhone smartphone">
-            <h3>iPhone</h3>
-            <p class="price-row">₹49,999</p>
-            <a href="#order-success" class="cart-button">Add to cart</a>
-        </div>
-        <div class="product-box">
-            <img src="./images/t.jpeg" alt="Smart LED TV">
-            <h3>Smart TV</h3>
-            <p class="price-row">₹29,999</p>
-            <a href="#order-success" class="cart-button">Add to cart</a>
-        </div>
-        <div class="product-box">
-            <img src="./images/l.jpg" alt="Laptop device">
-            <h3>Laptop</h3>
-            <p class="price-row">₹69,999</p>
-            <a href="#order-success" class="cart-button">Add to Cart</a>
-        </div>
-        <div class="product-box">
-            <img src="./images/w.jpg" alt="Digital watch">
-            <h3>Watch</h3>
-            <p class="price-row">₹19,999</p>
-            <a href="#order-success" class="cart-button">Add to Cart</a>
-        </div>
+ <footer class="footer">
+  <div class="footer-top">
+    <div class="footer-column">
+      <h3>About</h3>
+      <a href="#">Contact Us</a>
+      <a href="#">About Us</a>
+      <a href="#">Careers</a>
+      <a href="#">Flipkart Stories</a>
     </div>
 
-    <div class="product-row" id="row2">
-        <div class="product-box">
-            <img src="./images/h.jpg" alt="Wireless headphones">
-            <h3>Headphones</h3>
-            <p class="price-row">₹1,999</p>
-            <a href="#order-success" class="cart-button">Add to Cart</a>
-        </div>
-        <div class="product-box">
-            <img src="./images/camera.jpg" alt="DSLR camera">
-            <h3>Camera</h3>
-            <p class="price-row">₹24,999</p>
-            <a href="#order-success" class="cart-button">Add to Cart</a>
-        </div>
-        <div class="product-box">
-            <img src="./images/nike.jpg" alt="Black Nike running shoes">
-            <h3>Shoes</h3>
-            <p class="price-row">₹2,999</p>
-            <a href="#order-success" class="cart-button">Add to Cart</a>
-        </div>
-        <div class="product-box">
-            <img src="./images/bag.jpg" alt="Travel bag">
-            <h3>Bag</h3>
-            <p class="price-row">₹1,499</p>
-            <a href="#order-success" class="cart-button">Add to Cart</a>
-        </div>
+    <div class="footer-column">
+      <h3>Help</h3>
+      <a href="#">Payments</a>
+      <a href="#">Shipping</a>
+      <a href="#">Cancellation &amp; Returns</a>
+      <a href="#">FAQ</a>
     </div>
 
-    <div class="product-row" id="row3">
-        <div class="product-box">
-            <img src="./images/ipad.jpg" alt="Tablet device">
-            <h3>Tablet</h3>
-            <p class="price-row">₹14,999</p>
-            <a href="#order-success" class="cart-button">Place Order</a>
-        </div>
-        <div class="product-box">
-            <img src="./images/speaker.jpg" alt="Bluetooth speaker">
-            <h3>Speaker</h3>
-            <p class="price-row">₹3,999</p>
-            <a href="#order-success" class="cart-button">Place Order</a>
-        </div>
-        <div class="product-box">
-            <img src="./images/refrigerator.jpg" alt="Double door fridge">
-            <h3>Fridge</h3>
-            <p class="price-row">₹34,999</p>
-            <a href="#order-success" class="cart-button">Place Order</a>
-        </div>
-        <div class="product-box">
-            <img src="./images/ac.jpg" alt="Air conditioner">
-            <h3>AC</h3>
-            <p class="price-row">₹39,999</p>
-            <a href="#order-success" class="cart-button">Add to Cart</a>
-        </div>
+    <div class="footer-column">
+      <h3>Policy</h3>
+      <a href="#">Return Policy</a>
+      <a href="#">Terms Of Use</a>
+      <a href="#">Security</a>
+      <a href="#">Privacy</a>
     </div>
-</main>
 
-<section class="cart-area" id="cart">
-    <h2>Cart</h2>
-    <p class="empty-text">Empty cart</p>
-    <a href="#home" class="shop-now">Shop Now</a>
-</section>
+    <div class="footer-column">
+      <h3>Mail Us</h3>
+      <p>Flipkart Internet Pvt Ltd,<br>
+         Bengaluru, India</p>
+    </div>
+  </div>
 
-<section id="order-success" class="order-success">
-    <img src="https://abesquiz.netlify.app/assets/image/tick.gif"
-         alt="Order success tick icon" class="tick-icon">
-    <h2>Order Placed Successfully!</h2>
-    <p>Thank you for shopping with us.</p>
-    <a href="#home" class="shop-now">Continue Shopping</a>
-</section>
-
-<footer class="dark-footer">
-    <p>This Flipkart Clone project is created using only HTML and CSS to demonstrate the basic structure and design of an online shopping website. It includes a functional navigation bar, product sections with images and prices, a simple cart area, an order success message, and a login popup layout that together give a clear idea of how an e‑commerce homepage works for a B.Tech level web development project.</p>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Flipkart Clone Project</p>
+  </div>
 </footer>
+
 
 </body>
 </html>

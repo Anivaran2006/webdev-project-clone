@@ -104,7 +104,7 @@ body {
   list-style: none;
   min-width: 12.5rem;
   border-radius: 0.25rem;
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.25rem 0.75rem black;
   display: none;
   z-index: 10;
 }
@@ -122,6 +122,64 @@ body {
 }
 
 .more-wrapper:hover .more-menu {
+  display: block;
+}
+
+.login-wrapper {
+  position: relative;
+  margin-left: 1.25rem;
+}
+
+.login-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.login-menu {
+  position: absolute;
+  top: 130%;
+  right: 0;
+  background-color: white;
+  color: black;
+  width: 16.25rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.25rem 0.75rem black;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  z-index: 20;
+}
+
+.login-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 0.0625rem solid whitesmoke;
+  font-size: 0.8125rem;
+}
+
+.login-top a {
+  color: blue;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.login-menu li a {
+  display: block;
+  padding: 0.625rem 1rem;
+  font-size: 0.875rem;
+  color: black;
+  text-decoration: none;
+}
+
+.login-menu li a:hover {
+  background-color: whitesmoke;
+}
+
+.login-toggle:checked + .more-btn + .login-menu {
   display: block;
 }
 
@@ -179,6 +237,7 @@ body {
   display: flex;
   gap: 1rem;
   overflow-x: auto;
+  flex-wrap: wrap;
 }
 
 .product-card {
@@ -246,7 +305,7 @@ body {
 
 .accessory-banner {
   flex: 2;
-  background-color: #fbeeda;
+  background-color: wheat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,6 +316,7 @@ body {
   height: auto;
   object-fit: cover;
 }
+
 .full-row-image {
   width: 100%;
   height: auto;
@@ -307,23 +367,40 @@ body {
   text-align: center;
   padding: 0.75rem 1rem;
 }
-  
+
 @media (max-width: 48rem) {
   .footer-top {
     padding: 1.5rem 1rem;
   }
 }
 
-
 @media (max-width: 48rem) {
+  .navbar {
+    height: auto;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+
+  .nav-left {
+    width: 100%;
+    justify-content: space-between;
+  }
+
   .search-box input {
     width: 12.5rem;
+  }
+
+  .nav-right {
+    width: 100%;
+    justify-content: flex-end;
   }
 
   .category-strip {
     overflow-x: auto;
     justify-content: flex-start;
     gap: 0.75rem;
+    padding: 0.75rem 1rem;
   }
 
   .side-banner-row {
@@ -341,10 +418,18 @@ body {
   .accessory-products {
     justify-content: center;
   }
+
+  .product-row {
+    margin: 0.5rem;
+  }
 }
 
 @media (max-width: 30rem) {
   .more-btn .more-text {
     display: none;
+  }
+
+  .product-card {
+    width: 7.5rem;
   }
 }
